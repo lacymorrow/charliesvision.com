@@ -28,3 +28,12 @@ body { background:#111; height:100%; }
 			#supersized li.image-loading { background:#111 url(../img/progress.gif) no-repeat center center; width:100%; height:100%; }
 				#supersized li.image-loading img{ visibility:hidden; }
 			#supersized li.prevslide img, #supersized li.activeslide img{ display:inline; }
+
+			#supersized { display: none;}
+			html { 
+			  background: url(img/bg0.jpg) no-repeat center center fixed; 
+			  -webkit-background-size: cover;
+			  -moz-background-size: cover;
+			  -o-background-size: cover;
+			  background-size: cover;
+			}

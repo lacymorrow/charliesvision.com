@@ -69,7 +69,7 @@ mejs.PluginDetector.addPlugin('flash','Shockwave Flash','application/x-shockwave
 mejs.PluginDetector.addPlugin('silverlight','Silverlight Plug-In','application/x-silverlight-2','AgControl.AgControl', function (ax) {
 	// Silverlight cannot report its version number to IE
 	// but it does have a isVersionSupported function, so we have to loop through it to get a version number.
-	// adapted from http://www.silverlightversion.com/
+	// adapted from https://www.silverlightversion.com/
 	var v = [0,0,0,0],
 		loopMatch = function(ax, v, i, n) {
 			while(ax.isVersionSupported(v[0]+ "."+ v[1] + "." + v[2] + "." + v[3])){

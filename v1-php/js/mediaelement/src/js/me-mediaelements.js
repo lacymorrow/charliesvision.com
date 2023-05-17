@@ -65,8 +65,8 @@ mejs.PluginMediaElement = function (pluginid, pluginType, mediaUrl) {
 };
 
 // JavaScript values and ExternalInterface methods that match HTML5 video properties methods
-// http://www.adobe.com/livedocs/flash/9.0/ActionScriptLangRefV3/fl/video/FLVPlayback.html
-// http://www.whatwg.org/specs/web-apps/current-work/multipage/video.html
+// https://www.adobe.com/livedocs/flash/9.0/ActionScriptLangRefV3/fl/video/FLVPlayback.html
+// https://www.whatwg.org/specs/web-apps/current-work/multipage/video.html
 mejs.PluginMediaElement.prototype = {
 
 	// special

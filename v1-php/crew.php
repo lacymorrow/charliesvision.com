@@ -13,7 +13,7 @@
 				<div class="thumb float-left right30">
 					<img src="img/holden.png" alt="" />
 				</div>
-				<h3><a href="http://kofc.tumblr.com/" target="_blank">Holden Moore &raquo;</a></h3>
+				<h3><a href="https://kofc.tumblr.com/" target="_blank">Holden Moore &raquo;</a></h3>
 				<p>Anywhere is walking distance, if you have the time. Hey, I&rsquo;m an Appropriate Technology student at Appalachian State University. I love to learn in general and specification definitely inhibits growth :0. My family comes from Charleston, South Carolina and the beach will always be home. The College of Charleston was where I spent my freshman year but transferred to ASU to enjoy the mountain air. Writing is good, music is too and I love to play the drums. I want to help all beings, from humans to raccoons, both strangers and loved ones and all that fall in between. Charlie was an old and most dear friend and much of who I am I attribute to good ol&rsquo; &ldquo;Butterbuns&rdquo;. His love and companionship knew no bounds and his lessons I hope to embody for the remainder of my life.<br />A wise person once said: &ldquo;Men go forth to wonder at the heights of mountains, the huge waves of the sea, the broad flow of the rivers, the vast compass of the ocean, the courses of the stars: and they pass by themselves without wondering.&rdquo; I wonder; we gotta get back to the basics. I look to the sky often, and the earth equally. Beauty is everywhere! My birthday is March, 23rd 1991. Moondance and NOLS taught me valuable lessons of fellowship and natural law. Love and community is how we&rsquo;ll do it&ndash; It is the key, the way through! If I could be any animal I would be a frog.</p><br />
 			</div>
 			<div class="member float-right">
@@ -34,7 +34,7 @@
 				<div class="thumb float-right left30">
 					<img src="img/bill.png" alt="" />
 				</div>
-				<h3 class="right"><a href="http://billygoat1111.tumblr.com/">&laquo; Bill Pappas</a></h3>
+				<h3 class="right"><a href="https://billygoat1111.tumblr.com/">&laquo; Bill Pappas</a></h3>
 				<p class="right">My name is Bill Pappas, I&rsquo;m currently studying Anthropology at the University of North Carolina at Chapel Hill and it is really cool actually. I don&rsquo;t want to waste my time in life and I try to live day&ndash;to&ndash;day, moment&ndash;to&ndash;moment. I try to spend my time here finding the beautiful things and gravitating towards them. Music is what keeps me smiling; I find sharing music and dance to be one of the most enlightening experiences life can bring. Other than music, I love losing myself in a book or in the great outdoors. My favorite element is wind and my birthday is June 12, 1991. I find myself constantly searching for the truths in the world and I hope to one&ndash;day wake up to a world where everyone and everything on it is in harmony. Lately I&rsquo;ve found myself participating in rallies and protests, which I find to be exhilarating and spiritual in essence. I&rsquo;ve always loved rocks and I look forward to finding some good ones on the trail. Something I admired in Charlie was that you always knew he had your back no matter the situation, I knew he could be counted on for anything, and that is a quality I hope to embody as I grow and learn in life. One of my favorite quotes by Einstein is, &ldquo;Look deep into nature, and then you will understand everything better.&rdquo; I&rsquo;m taking a 2,000&ndash;mile walk with some friends and I feel it will be the best thing I&rsquo;ve ever done.</p><br />
 			</div>
 			<div class="member float-left">

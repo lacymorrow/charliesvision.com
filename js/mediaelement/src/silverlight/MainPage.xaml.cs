@@ -107,7 +107,7 @@ namespace SilverlightMediaElement
 			_timer.Tick += new EventHandler(timer_Tick);
 			_timer.Stop();
 
-			//_mediaUrl = "http://local.mediaelement.com/media/jsaddington.mp4";
+			//_mediaUrl = "https://local.mediaelement.com/media/jsaddington.mp4";
 			//_autoplay = true;
 			
 			// set stage and media sizes

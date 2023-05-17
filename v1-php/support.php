@@ -1,7 +1,7 @@
 		<?php include('header.php'); ?>
 		<div id="wrapper" class="support">
-			<div id="donate-img"><a href="http://donate.worldvision.org/OA_HTML/xxwvibeCZzpEntry.jsp?go=donate&campaign=21507326" target="_blank"><img src="img/support.png" alt="" width="450" height="180" /></a></div>
-			<h4 class="center large"><a href="http://donate.worldvision.org/OA_HTML/xxwvibeCZzpEntry.jsp?go=donate&campaign=21507326" target="_blank">DONATE DIRECTLY TO WORLD VISION</a></h4>
+			<div id="donate-img"><a href="https://donate.worldvision.org/OA_HTML/xxwvibeCZzpEntry.jsp?go=donate&campaign=21507326" target="_blank"><img src="img/support.png" alt="" width="450" height="180" /></a></div>
+			<h4 class="center large"><a href="https://donate.worldvision.org/OA_HTML/xxwvibeCZzpEntry.jsp?go=donate&campaign=21507326" target="_blank">DONATE DIRECTLY TO WORLD VISION</a></h4>
 			<h4>OR MAIL TO:<br />World Vision<br />PO Box 9716<br />Federal Way, WA 98063<br  />Reference code 21507326</h4>
 			<div id="pledge">
 			<?php
@@ -74,8 +74,8 @@ echo '<h4 class="center green">YOUR PLEDGE HAS BEEN ADDED</h4>';
 			<h4 class="center">ALL T&ndash;SHIRT PROFITS GO TO WORLD VISION TO SUPPORT THE CHARLIE BUTTERWORTH MEMORIAL</h4>
 			<div class="right20 float-left">
 					<!-- 
-					<a href="http://www.charliesvision.yokaboo.com/"><img src="img/shirt.png" alt="" width="440" height="519" /></a>
-					<h3 class="center"><a href="http://www.charliesvision.yokaboo.com/">GET YOURS NOW!</a></h3>
+					<a href="https://www.charliesvision.yokaboo.com/"><img src="img/shirt.png" alt="" width="440" height="519" /></a>
+					<h3 class="center"><a href="https://www.charliesvision.yokaboo.com/">GET YOURS NOW!</a></h3>
 					-->
 					<img src="img/shirt.png" alt="" width="440" height="519" />
 					<h3 class="center strikethrough">GET YOURS NOW!</h3>
@@ -84,7 +84,7 @@ echo '<h4 class="center green">YOUR PLEDGE HAS BEEN ADDED</h4>';
 			<h3>last date for pre&ndash;orders is Thursday, April 5th.</h3>
 			<p>After gathering ideas from many of Charlie&rsquo;s friends, Jane Hall designed this t&ndash;shirt to help raise money for World Vision. The sun is a subwoofer, representing Charlie&rsquo;s love for music. Within the mountains is the phrase &ldquo;carpe diem,&rdquo; which was the theme of his eulogy given by Brian Silldorff. To the right is a map of the Appalachian Trail, which represents the journey that seven of Charlie&rsquo;s friends are making in his honor this summer. The left edge of the painting includes a harmonica, one of Charlie&rsquo;s favorite hobbies. The right edge includes the Boy Scouts of America logo, acknowledging his accomplishments as an eagle scout. Along the bottom is the phrase &ldquo;discover your own trail&rdquo;, which his friends think describes the way Charlie addressed life in a nonconformist and spontaneous way, along with his initials CGB (Charles Gardner Butterworth). The painting is done in bright hues as an attempt to represent the vibrancy in Charlie&rsquo;s personality and all of the color he brought to our lives. We are hoping to sell many of these shirts to raise money for World Vision, one of Charlie&rsquo;s favorite humanitarian organizations.<br /><span class="bold">All Profits Go To World Vision.</span></p>
 			<!-- 
-			<h4 class="center strikethrough"><a href="http://www.charliesvision.yokaboo.com/">&laquo; CLICK TO ORDER &raquo;</a></h4><br />
+			<h4 class="center strikethrough"><a href="https://www.charliesvision.yokaboo.com/">&laquo; CLICK TO ORDER &raquo;</a></h4><br />
 			-->
 			<h4 class="center strikethrough">&laquo; CLICK TO ORDER &raquo;</h4><br />
 			<div class="tiny center marquee">

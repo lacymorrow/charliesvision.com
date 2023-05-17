@@ -44,8 +44,8 @@
 				<p>Lump Sum Promise; Click here to donate directly to World Vision!</p>
 				<p>Thank you Charlie Butterworth community! Every dollar takes an ounce off our pack.</p>
 				<a name="support"></a>
-				<div id="donate-img"><a href="http://donate.worldvision.org/OA_HTML/xxwvibeCZzpEntry.jsp?go=donate&campaign=21507326" target="_blank"><img src="img/support.png" alt="" width="450" height="180" /></a></div>
-				<h4 class="center"><a href="http://donate.worldvision.org/OA_HTML/xxwvibeCZzpEntry.jsp?go=donate&campaign=21507326" target="_blank">&laquo; DONATE! &raquo;</a></h4>
+				<div id="donate-img"><a href="https://donate.worldvision.org/OA_HTML/xxwvibeCZzpEntry.jsp?go=donate&campaign=21507326" target="_blank"><img src="img/support.png" alt="" width="450" height="180" /></a></div>
+				<h4 class="center"><a href="https://donate.worldvision.org/OA_HTML/xxwvibeCZzpEntry.jsp?go=donate&campaign=21507326" target="_blank">&laquo; DONATE! &raquo;</a></h4>
 				<br />
 			</div>
 		</div>

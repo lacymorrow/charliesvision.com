@@ -4,7 +4,7 @@ window.log = function f(){ log.history = log.history || []; log.history.push(arg
 
 /**
 * author Remy Sharp
-* url http://remysharp.com/tag/marquee
+* url https://remysharp.com/tag/marquee
 */
 
 (function ($) {
@@ -161,7 +161,7 @@ window.log = function f(){ log.history = log.history || []; log.history.push(arg
 
 /*!
  * jQuery Countdown plugin v1.0
- * http://www.littlewebthings.com/projects/countdown/
+ * https://www.littlewebthings.com/projects/countdown/
  *
  * Copyright 2010, Vassilis Dourdounis
  * 

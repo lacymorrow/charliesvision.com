@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("SilverlightMediaElement")]
-[assembly: AssemblyDescription("Silverlight player for http://mediaelementjs.com/")]
+[assembly: AssemblyDescription("Silverlight player for https://mediaelementjs.com/")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("John Dyer")]
 [assembly: AssemblyProduct("SilverlightMediaElement")]

@@ -51,7 +51,7 @@
   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->	
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="https://browsehappy.com/">Upgrade to a different browser</a> or <a href="https://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->	
   <!--End of styles-->
   
   
@@ -59,7 +59,7 @@
 	<div id="container">
 		<div id="header">
 			<div class="title">
-				<h1><a href="http://www.charliesvision.com/"><span class="blue">C</span><span class="yellow">H</span><span class="pink">A</span><span class="green">R</span><span class="orange">L</span><span class="blue">I</span><span class="yellow">E</span><span class="pink">&rsquo;</span><span class="green">S</span> <span class="orange">V</span><span class="blue">I</span><span class="yellow">S</span><span class="pink">I</span><span class="green">O</span><span class="orange">N</span></a></h1>
+				<h1><a href="https://www.charliesvision.com/"><span class="blue">C</span><span class="yellow">H</span><span class="pink">A</span><span class="green">R</span><span class="orange">L</span><span class="blue">I</span><span class="yellow">E</span><span class="pink">&rsquo;</span><span class="green">S</span> <span class="orange">V</span><span class="blue">I</span><span class="yellow">S</span><span class="pink">I</span><span class="green">O</span><span class="orange">N</span></a></h1>
 				
 				<h3 style="text-transform:uppercase;"><!-- MILES TRAVELLED: <span class="miles">206.8</span><br /> -->
 				LAST LOCATION: Mt. Katahdin, Maine</h3>

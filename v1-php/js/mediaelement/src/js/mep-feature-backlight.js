@@ -13,7 +13,7 @@
 			if (!player.isVideo)
 				return;
 
-			//http://www.splashnology.com/blog/html5/382.html
+			//https://www.splashnology.com/blog/html5/382.html
 
 			var 
 				mediaContainer = player.container.find('.mejs-mediaelement').parent(),
@@ -131,7 +131,7 @@
 				});
 
 
-			// http://www.splashnology.com/blog/html5/382.html
+			// https://www.splashnology.com/blog/html5/382.html
 			function updateLights() {
 
 				// get a copy of video

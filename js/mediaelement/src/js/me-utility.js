@@ -84,7 +84,7 @@ mejs.Utility = {
 		return tc_in_seconds;
 	},
 	
-	/* borrowed from SWFObject: http://code.google.com/p/swfobject/source/browse/trunk/swfobject/src/swfobject.js#474 */
+	/* borrowed from SWFObject: https://code.google.com/p/swfobject/source/browse/trunk/swfobject/src/swfobject.js#474 */
 	removeSwf: function(id) {
 		var obj = document.getElementById(id);
 		if (obj && obj.nodeName == "OBJECT") {

@@ -1,7 +1,7 @@
 # charliesvision.com
 Archive files for www.CharliesVision.com
 
-#Benvenuto!
+# Benvenuto!
 
 Welcome to Charlie’s Vision! 
 

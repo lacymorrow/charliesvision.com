@@ -1,0 +1,6 @@
+﻿<Deployment xmlns="https://schemas.microsoft.com/client/2007/deployment"
+        xmlns:x="https://schemas.microsoft.com/winfx/2006/xaml"
+>
+    <Deployment.Parts>
+    </Deployment.Parts>
+</Deployment>

@@ -2,8 +2,9 @@
  * Galleria init with Flickr-first, local-image fallback.
  *
  * Tries loading from Flickr set 72157629214934718.
- * If the API key is expired or the request fails,
- * falls back to local images in img/slideshow/.
+ * If the API key is expired, the request fails, or Galleria
+ * hits a fatal error (e.g. stage height 0), falls back to a
+ * simple image grid rendered directly into the container.
  */
 (function () {
   var LOCAL_IMAGES = [
@@ -39,14 +40,98 @@
   var FLICKR_API_KEY = "ed217acfd601abb0b487784100a40335";
   var FLICKR_TIMEOUT_MS = 5000;
 
+  // Static fallback: render a simple image grid when Galleria can't run at all
+  function renderStaticGrid(selector) {
+    var $el = $(selector);
+    // Clear any broken Galleria markup
+    $el.find('.galleria-errors').remove();
+    $el.empty();
+    $el.css({
+      display: 'flex',
+      flexWrap: 'wrap',
+      gap: '8px',
+      justifyContent: 'center',
+      padding: '8px',
+      minHeight: 'auto',
+      height: 'auto'
+    });
+    $.each(LOCAL_IMAGES, function (i, img) {
+      $('<img>')
+        .attr('src', img.image)
+        .attr('loading', 'lazy')
+        .css({
+          width: '200px',
+          height: '150px',
+          objectFit: 'cover',
+          borderRadius: '4px',
+          cursor: 'pointer'
+        })
+        .on('click', function () {
+          window.open(img.image, '_blank');
+        })
+        .appendTo($el);
+    });
+  }
+
+  // Patch Galleria.raise to catch fatal errors and fall back
+  var _originalRaise = null;
+  var _activeSelector = null;
+  var _activeOpts = null;
+  var _fellBack = false;
+
+  function patchGalleriaRaise() {
+    if (_originalRaise) return; // already patched
+    _originalRaise = Galleria.raise;
+    Galleria.raise = function (msg, fatal) {
+      if (fatal && !_fellBack) {
+        _fellBack = true;
+        // Try local dataSource first (might fix the issue if it was Flickr-related)
+        try {
+          var $el = $(_activeSelector);
+          // Ensure the container has a height for Galleria
+          if ($el.height() < 10) {
+            $el.css('height', '400px');
+          }
+          $el.empty();
+          var opts = $.extend({ dataSource: LOCAL_IMAGES }, _activeOpts || {});
+          $el.galleria(opts);
+        } catch (e) {
+          // Galleria is fully broken, render a plain image grid
+          renderStaticGrid(_activeSelector);
+        }
+        return;
+      }
+      // Non-fatal errors: call original
+      _originalRaise.apply(this, arguments);
+    };
+  }
+
   function initWithLocal(selector, extraOpts) {
-    var opts = $.extend({ dataSource: LOCAL_IMAGES }, extraOpts || {});
-    $(selector).galleria(opts);
+    _activeSelector = selector;
+    _activeOpts = extraOpts;
+    _fellBack = false;
+    patchGalleriaRaise();
+
+    var $el = $(selector);
+    if ($el.height() < 10) {
+      $el.css('height', '400px');
+    }
+
+    try {
+      var opts = $.extend({ dataSource: LOCAL_IMAGES }, extraOpts || {});
+      $el.galleria(opts);
+    } catch (e) {
+      renderStaticGrid(selector);
+    }
   }
 
   function initGalleria(selector, extraOpts) {
+    _activeSelector = selector;
+    _activeOpts = extraOpts;
+    _fellBack = false;
+    patchGalleriaRaise();
+
     // Probe the Flickr API directly before handing off to Galleria.
-    // This avoids Galleria.raise throwing an uncatchable error.
     var url =
       "https://api.flickr.com/services/rest/?" +
       "method=flickr.photosets.getPhotos" +
@@ -57,7 +142,6 @@
 
     var done = false;
 
-    // Timeout: if Flickr doesn't respond in time, use local
     var timer = setTimeout(function () {
       if (!done) {
         done = true;
@@ -72,12 +156,19 @@
         clearTimeout(timer);
 
         if (data.stat === "ok" && data.photoset && data.photoset.photo && data.photoset.photo.length) {
-          // Flickr works, let Galleria use it natively
-          var opts = $.extend({
-            flickr: "set:" + FLICKR_SET,
-            flickrOptions: { sort: "date-posted-asc" }
-          }, extraOpts || {});
-          $(selector).galleria(opts);
+          var $el = $(selector);
+          if ($el.height() < 10) {
+            $el.css('height', '400px');
+          }
+          try {
+            var opts = $.extend({
+              flickr: "set:" + FLICKR_SET,
+              flickrOptions: { sort: "date-posted-asc" }
+            }, extraOpts || {});
+            $el.galleria(opts);
+          } catch (e) {
+            initWithLocal(selector, extraOpts);
+          }
         } else {
           initWithLocal(selector, extraOpts);
         }
@@ -90,7 +181,6 @@
       });
   }
 
-  // Expose globally
   window.initGalleria = initGalleria;
   window.initGalleriaLocal = initWithLocal;
 })();

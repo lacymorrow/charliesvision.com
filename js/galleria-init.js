@@ -36,7 +36,7 @@
   ];
 
   var FLICKR_SET = "72157629214934718";
-  var FLICKR_API_KEY = "2a2ce06c15780ebeb0b706650fc890b2";
+  var FLICKR_API_KEY = "ed217acfd601abb0b487784100a40335";
   var FLICKR_TIMEOUT_MS = 5000;
 
   function initWithLocal(selector, extraOpts) {

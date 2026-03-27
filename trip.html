@@ -21,7 +21,6 @@
 	<script src="./trip_files/mediaelement-and-player.min.js"></script>
 	<link rel="stylesheet" href="./trip_files/mediaelementplayer.css">
 	<script src="./trip_files/galleria-1.2.6.min.js"></script>
-	<script src="./trip_files/galleria.flickr.min.js"></script>
 	<script type="text/javascript" src="./trip_files/orangebox.min.js"></script>
     <link rel="stylesheet" href="./trip_files/orangebox.css" type="text/css">
     <style type="text/css">
@@ -43,12 +42,35 @@
 
     // Initialize Galleria
     $('#galleria').galleria({
-        flickr: 'set:72157629214934718',
-        lightbox: true,
-        flickrOptions: {
-            sort: 'interestingness-desc',
-            description: true
-        }
+        dataSource: [
+            { image: "img/slideshow/11_6980367959_o.jpg" },
+            { image: "img/slideshow/12_6980368097_o.jpg" },
+            { image: "img/slideshow/13_6834240556_o.jpg" },
+            { image: "img/slideshow/14_6980957137_o.jpg" },
+            { image: "img/slideshow/1_6834240006_o.jpg" },
+            { image: "img/slideshow/3_6834240504_o.jpg" },
+            { image: "img/slideshow/4_6980368189_o.jpg" },
+            { image: "img/slideshow/5_6834240076_o.jpg" },
+            { image: "img/slideshow/6834240626_7aee2a834a_o.jpg" },
+            { image: "img/slideshow/7_6834240692_o.jpg" },
+            { image: "img/slideshow/8_6980368029_o.jpg" },
+            { image: "img/slideshow/9_6834240338_o.jpg" },
+            { image: "img/slideshow/all-good-music-festival-10_6834829310_o.jpg" },
+            { image: "img/slideshow/charlie_6980957233_o.jpg" },
+            { image: "img/slideshow/dscn0731_7015754857_o.jpg" },
+            { image: "img/slideshow/dscn0943_7015756023_o.jpg" },
+            { image: "img/slideshow/off-camera-on-022511-005_7015756991_o.jpg" },
+            { image: "img/slideshow/off-camera-on-022511-419_6869646152_o.jpg" },
+            { image: "img/slideshow/off-camera-on-022511-465_7015762751_o.jpg" },
+            { image: "img/slideshow/off-camera-on-022511-491_7015760931_o.jpg" },
+            { image: "img/slideshow/off-camera-on-022511-507_7015761743_o.jpg" },
+            { image: "img/slideshow/off-camera-on-022511-543_6869654420_o.jpg" },
+            { image: "img/slideshow/off-camera-on-022511-546_7015766603_o.jpg" },
+            { image: "img/slideshow/summer-09-528_7015767543_o.jpg" },
+            { image: "img/slideshow/summer-09-539_6869658950_o.jpg" },
+            { image: "img/slideshow/the-butterworth-family_6980957185_o.jpg" }
+        ],
+        lightbox: true
     });
 
     $('video,audio').mediaelementplayer(/* Options */);

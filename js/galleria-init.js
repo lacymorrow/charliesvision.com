@@ -62,16 +62,16 @@
     el.className = '';
     el.removeAttribute('style');
 
-    // Gallery grid styles
-    el.style.cssText = 'display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));' +
-      'gap:6px;padding:8px;width:100%;box-sizing:border-box;';
+    // Gallery grid styles - constrained to fit within parent container
+    el.style.cssText = 'display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));' +
+      'gap:4px;padding:4px;width:100%;max-width:480px;box-sizing:border-box;clear:both;';
 
     LOCAL_IMAGES.forEach(function (src, i) {
       var img = document.createElement('img');
       img.src = src;
       img.loading = 'lazy';
       img.alt = 'Photo ' + (i + 1);
-      img.style.cssText = 'width:100%;height:160px;object-fit:cover;border-radius:3px;cursor:pointer;transition:opacity .2s;';
+      img.style.cssText = 'width:100%;height:100px;object-fit:cover;border-radius:3px;cursor:pointer;transition:opacity .2s;';
       img.onmouseenter = function () { img.style.opacity = '0.8'; };
       img.onmouseleave = function () { img.style.opacity = '1'; };
       img.onclick = function () {

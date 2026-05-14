@@ -4,13 +4,9 @@
 
 ## Screenshots
 
-### Desktop
-
-![Charlie's Vision — Desktop](docs/screenshots/desktop.png)
-
-### Mobile
-
-![Charlie's Vision — Mobile](docs/screenshots/mobile.png)
+| Desktop | Mobile |
+| :---: | :---: |
+| ![Charlie's Vision — Desktop](docs/screenshots/desktop.png) | ![Charlie's Vision — Mobile](docs/screenshots/mobile.png) |
 
 ---
 
